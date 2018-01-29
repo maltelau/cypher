@@ -88,7 +88,7 @@ def get_lyrics(artist):
                                     'song': song,
                                     'year': year,
                                     'album': album,
-                                    'id': uid.next(),
+                                    'id': next(uid),
                                     'genre': genre
                                 }
                                 lyrics_obj.append(lyric_dict)
